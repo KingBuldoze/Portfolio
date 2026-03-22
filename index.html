@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Abhay Das | AI &amp; Machine Learning Engineer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#6d758c",
+              "on-primary-container": "#2b006e",
+              "on-background": "#dee5ff",
+              "on-primary": "#39008c",
+              "surface-container-low": "#091328",
+              "secondary-fixed": "#65e1ff",
+              "on-secondary-fixed-variant": "#005969",
+              "primary": "#ba9eff",
+              "tertiary-fixed": "#f487ff",
+              "primary-container": "#ae8dff",
+              "surface-container-lowest": "#000000",
+              "tertiary-container": "#de4bf4",
+              "on-tertiary-fixed": "#300038",
+              "on-error-container": "#ffb2b9",
+              "tertiary": "#ec63ff",
+              "inverse-primary": "#6e3bd7",
+              "on-tertiary": "#3d0047",
+              "secondary-container": "#00687a",
+              "error": "#ff6e84",
+              "surface-container-high": "#141f38",
+              "primary-dim": "#8455ef",
+              "error-dim": "#d73357",
+              "surface-dim": "#060e20",
+              "on-primary-fixed": "#000000",
+              "surface-variant": "#192540",
+              "surface-bright": "#1f2b49",
+              "primary-fixed-dim": "#a27cff",
+              "on-surface": "#dee5ff",
+              "primary-fixed": "#ae8dff",
+              "secondary": "#53ddfc",
+              "secondary-fixed-dim": "#48d4f3",
+              "on-secondary": "#004b58",
+              "tertiary-dim": "#ec63ff",
+              "background": "#060e20",
+              "secondary-dim": "#40ceed",
+              "inverse-on-surface": "#4d556b",
+              "on-surface-variant": "#a3aac4",
+              "on-error": "#490013",
+              "on-tertiary-container": "#19001e",
+              "surface": "#060e20",
+              "on-secondary-container": "#ecfaff",
+              "inverse-surface": "#faf8ff",
+              "surface-container": "#0f1930",
+              "tertiary-fixed-dim": "#ef6eff",
+              "surface-container-highest": "#192540",
+              "error-container": "#a70138",
+              "on-primary-fixed-variant": "#370086",
+              "on-tertiary-fixed-variant": "#660075",
+              "outline-variant": "#40485d",
+              "surface-tint": "#ba9eff",
+              "on-secondary-fixed": "#003a45"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-panel {
+        background: rgba(25, 37, 64, 0.4);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .neural-gradient {
+        background: linear-gradient(135deg, #ba9eff 0%, #53ddfc 100%);
+      }
+      .chromatic-shadow {
+        box-shadow: 0 0 40px rgba(132, 85, 239, 0.08);
+      }
+html { scroll-behavior: smooth; }
+      body {
+        background-color: #060e20;
+        color: #dee5ff;
+        font-family: 'Inter', sans-serif;
+      }
+      .headline-font {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+      .perspective-container {
+        perspective: 1000px;
+      }
+      .tilt-card {
+        transition: transform 0.1s ease-out;
+        transform-style: preserve-3d;
+      }
+    </style>
+</head>
+<body class="selection:bg-primary/30 selection:text-secondary-fixed">
+<!-- TopAppBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-3 bg-surface-variant/60 backdrop-blur-xl rounded-full mt-4 mx-auto max-w-5xl border border-[#40485d]/20 shadow-[0_0_40px_rgba(132,85,239,0.08)]">
+<div class="text-xl font-bold bg-gradient-to-r from-[#ba9eff] to-[#53ddfc] bg-clip-text text-transparent font-['Space_Grotesk'] tracking-tighter">
+            Abhay Das
+        </div>
+<div class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] tracking-tighter font-light">
+<a class="text-[#53ddfc] border-b-2 border-[#53ddfc] pb-1" href="#hero">Hero</a>
+<a class="text-[#dee5ff]/70 hover:text-[#dee5ff] transition-colors duration-300" href="#about">About</a>
+<a class="text-[#dee5ff]/70 hover:text-[#dee5ff] transition-colors duration-300" href="#skills">Skills</a>
+<a class="text-[#dee5ff]/70 hover:text-[#dee5ff] transition-colors duration-300" href="#projects">Projects</a>
+<a class="text-[#dee5ff]/70 hover:text-[#dee5ff] transition-colors duration-300" href="#education">Education</a>
+<a class="text-[#dee5ff]/70 hover:text-[#dee5ff] transition-colors duration-300" href="#contact">Contact</a>
+</div>
+<button class="bg-primary text-on-primary-container px-6 py-2 rounded-full font-medium hover:bg-violet-500/10 hover:shadow-[0_0_15px_rgba(186,158,255,0.4)] transition-all scale-95 duration-300 ease-in-out">
+            Connect
+        </button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20" id="hero">
+<!-- Decorative 3D-like elements -->
+<div class="absolute top-1/4 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-[120px] animate-pulse"></div>
+<div class="absolute bottom-1/4 -right-20 w-80 h-80 bg-secondary/10 rounded-full blur-[140px] animate-pulse"></div>
+<div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-outline-variant/30 bg-surface-container-high/50 text-primary font-label text-xs tracking-widest uppercase">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+                        Neural Interface Active
+                    </div>
+<h1 class="headline-font text-6xl md:text-8xl font-light tracking-tighter leading-tight">
+                        Abhay Das | <span class="text-secondary">AI &amp; ML</span> Engineer
+                    </h1>
+<p class="text-on-surface-variant text-xl max-w-xl leading-relaxed">
+                        Building the next generation of intelligent systems through neural architectures and high-performance computing.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary-container px-8 py-4 rounded-full font-semibold hover:shadow-[0_0_30px_rgba(186,158,255,0.3)] transition-all duration-300">
+                            Explore Projects
+                        </button>
+<button class="border border-outline-variant bg-surface-variant/40 backdrop-blur px-8 py-4 rounded-full font-semibold hover:bg-surface-variant transition-all duration-300">
+                            View Research
+                        </button>
+</div>
+</div>
+<div class="relative group">
+<!-- Placeholder for 3D Geometric ML Shape -->
+<div class="aspect-square relative flex items-center justify-center">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-3xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+<div class="relative w-72 h-72 border-2 border-primary/30 rounded-2xl rotate-45 flex items-center justify-center group-hover:rotate-90 transition-transform duration-[2000ms] ease-in-out">
+<div class="w-56 h-56 border border-secondary/40 rounded-full flex items-center justify-center">
+<div class="w-32 h-32 neural-gradient rounded-xl shadow-[0_0_50px_rgba(186,158,255,0.5)]"></div>
+</div>
+</div>
+<!-- Floating particles/cubes logic in design -->
+<div class="absolute top-10 right-10 w-8 h-8 bg-tertiary/20 backdrop-blur-sm rounded-lg border border-tertiary/40"></div>
+<div class="absolute bottom-20 left-0 w-12 h-12 bg-secondary/20 backdrop-blur-sm rounded-full border border-secondary/40"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- About & Skills Section -->
+<section class="py-32 relative bg-surface-dim" id="about">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid lg:grid-cols-2 gap-24 items-start">
+<div class="space-y-12">
+<div class="space-y-4">
+<h2 class="headline-font text-4xl font-bold tracking-tight">Technical <span class="text-primary">DNA</span></h2>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                                Specialized in the intersection of Deep Learning and Human-Computer Interaction. My approach combines mathematical rigor with aesthetic precision to create AI that doesn't just compute, but comprehends.
+                            </p>
+</div>
+<!-- Bento-ish Skills Grid -->
+<div class="grid grid-cols-2 gap-4" id="skills">
+<div class="glass-panel p-6 rounded-2xl border border-outline-variant/20 hover:border-secondary/50 transition-colors">
+<span class="material-symbols-outlined text-secondary mb-4" style="font-size: 32px;">code</span>
+<h3 class="font-bold text-lg mb-2">Languages</h3>
+<p class="text-on-surface-variant text-sm">Python, C, Java, R, SQL</p>
+</div>
+<div class="glass-panel p-6 rounded-2xl border border-outline-variant/20 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary mb-4" style="font-size: 32px;">neurology</span>
+<h3 class="font-bold text-lg mb-2">AI & ML</h3>
+<p class="text-on-surface-variant text-sm">Machine Learning, Deep Learning, Neural Networks, Keras, PyTorch, Scikit-learn.</p>
+</div>
+<div class="glass-panel p-6 rounded-2xl border border-outline-variant/20 hover:border-tertiary/50 transition-colors">
+<span class="material-symbols-outlined text-tertiary mb-4" style="font-size: 32px;">visibility</span>
+<h3 class="font-bold text-lg mb-2">Computer Vision</h3>
+<p class="text-on-surface-variant text-sm">YOLO, OpenCV, MediaPipe, OCR, Face & Gesture Recognition.</p>
+</div>
+<div class="glass-panel p-6 rounded-2xl border border-outline-variant/20 hover:border-on-secondary/50 transition-colors">
+<span class="material-symbols-outlined text-[#53ddfc] mb-4" style="font-size: 32px;">robot_2</span>
+<h3 class="font-bold text-lg mb-2">Gen AI & NLP</h3>
+<p class="text-on-surface-variant text-sm">Prompt Engineering, LLMs, API Integration, TTS, Speech Analytics.</p>
+</div>
+<div class="glass-panel p-6 rounded-2xl border border-outline-variant/20 hover:border-secondary/50 transition-colors col-span-2 md:col-span-1">
+<span class="material-symbols-outlined text-[#ba9eff] mb-4" style="font-size: 32px;">database</span>
+<h3 class="font-bold text-lg mb-2">Data Engineering</h3>
+<p class="text-on-surface-variant text-sm">Analysis, Visualization, Hadoop, MapReduce, Pandas.</p>
+</div>
+<div class="glass-panel p-6 rounded-2xl border border-outline-variant/20 hover:border-tertiary/50 transition-colors col-span-2 md:col-span-1">
+<span class="material-symbols-outlined text-[#ec63ff] mb-4" style="font-size: 32px;">microchip</span>
+<h3 class="font-bold text-lg mb-2">Embedded Systems</h3>
+<p class="text-on-surface-variant text-sm">Arduino, Robotics, HW/SW Integration, System Design.</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute inset-0 bg-primary/5 blur-3xl rounded-full"></div>
+<div class="glass-panel p-1 border border-outline-variant/20 rounded-3xl overflow-hidden shadow-2xl">
+<img class="w-full aspect-square object-cover rounded-[1.25rem] opacity-80" data-alt="Abstract neural network visualization with glowing nodes and purple connections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTR0vuGQSWR6AzML8MtGP3Ts3JorQiYElW1x1pYx12hKc5QIeKsUqPj_F1o-kkVQ5njikcb_lRHW5Ym2M0f6V8zergLQzqq-0t1NyFN99-x4SOTG8onPuVdYdblYpTlTMU-k-dIOlvRcnxU7QmvO3UN251-IrtxEDd7Ati9IqWF5NRAt5of1Q39Da29neHZmd8S63nBTMexq-qtd1EdcBXKSvkScm550Go9GgxEPu6JOM3wW_UQlKu72WnebnOnEg1kUXJagNf4ciM"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-32 bg-surface-container-low" id="projects">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="space-y-4">
+<span class="text-secondary font-label text-xs tracking-[0.2em] uppercase">Deployment History</span>
+<h2 class="headline-font text-5xl font-bold tracking-tight">Signature Projects</h2>
+</div>
+<p class="text-on-surface-variant max-w-sm">A curation of intelligent systems designed to bridge the gap between human and machine.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="group relative">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-surface-container-lowest/80 z-10 rounded-3xl"></div>
+<div class="relative aspect-[4/3] rounded-3xl overflow-hidden border border-outline-variant/20">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Virtual fitness coach" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&amp;fit=crop&amp;q=80&amp;w=600"/>
+</div>
+<div class="mt-8 space-y-4 relative z-20">
+<div class="flex items-center gap-4">
+<h3 class="headline-font text-2xl font-bold">AI Empathy Coach</h3>
+<span class="bg-secondary/10 text-secondary text-[10px] px-2 py-0.5 rounded border border-secondary/20 font-bold tracking-widest uppercase">Capstone</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                AI-powered empathy training system for healthcare professionals using Generative AI and LLMs to provide context-sensitive ethical feedback. Touro University.
+                            </p>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group relative">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-surface-container-lowest/80 z-10 rounded-3xl"></div>
+<div class="relative aspect-[4/3] rounded-3xl overflow-hidden border border-outline-variant/20">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Smart glasses" src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&amp;fit=crop&amp;q=80&amp;w=600"/>
+</div>
+<div class="mt-8 space-y-4 relative z-20">
+<div class="flex items-center gap-4">
+<h3 class="headline-font text-2xl font-bold">Smart Glass System</h3>
+<span class="bg-primary/10 text-primary text-[10px] px-2 py-0.5 rounded border border-primary/20 font-bold tracking-widest uppercase">Assistive</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                Real-time AI smart glass integrating YOLO-based object detection, facial recognition, and OCR to enhance accessibility for visually impaired users.
+                            </p>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group relative">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-surface-container-lowest/80 z-10 rounded-3xl"></div>
+<div class="relative aspect-[4/3] rounded-3xl overflow-hidden border border-outline-variant/20">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Sign language vision" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&amp;fit=crop&amp;q=80&amp;w=600"/>
+</div>
+<div class="mt-8 space-y-4 relative z-20">
+<div class="flex items-center gap-4">
+<h3 class="headline-font text-2xl font-bold">Sign Language Assistant</h3>
+<span class="bg-tertiary/10 text-tertiary text-[10px] px-2 py-0.5 rounded border border-tertiary/20 font-bold tracking-widest uppercase">HCI</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                Real-time gesture recognition using MediaPipe and Computer Vision to interpret sign language and facilitate application control.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education & Contact Section -->
+<section class="py-32 relative" id="education">
+<div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-32">
+<div class="space-y-16">
+<div class="space-y-4">
+<h2 class="headline-font text-4xl font-bold tracking-tight">Academic Foundation</h2>
+<div class="w-20 h-1 neural-gradient"></div>
+</div>
+<div class="space-y-12">
+<div class="relative pl-8 border-l border-outline-variant/30">
+<div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-primary shadow-[0_0_10px_#ba9eff]"></div>
+<div class="space-y-2">
+<span class="text-secondary font-label text-xs">2021 — 2025</span>
+<h4 class="text-xl font-bold">B.Tech Artificial Intelligence And Data Science</h4>
+<p class="text-on-surface-variant">Vimal Jyothi Engineering College</p>
+<p class="text-xs text-on-surface-variant/70 mt-2">Core academic foundation complemented by a focused seminar on "Design and Evaluation of a Real-Time Face Recognition System using CNN".</p>
+</div>
+</div>
+<div class="relative pl-8 border-l border-outline-variant/30">
+<div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-outline-variant"></div>
+<div class="space-y-2">
+<h4 class="text-xl font-bold">Professional Certifications</h4>
+<ul class="text-sm text-on-surface-variant space-y-2 mt-4">
+    <li><strong class="text-[#ba9eff]">UpGrad</strong> - ChatGPT for Developers, Generative AI, Advanced Prompt Engineering</li>
+    <li><strong class="text-[#53ddfc]">Gov of Dubai</strong> - Prompt Engineering Certification</li>
+    <li><strong class="text-[#ec63ff]">Microsoft</strong> - Power BI Certification</li>
+</ul>
+</div>
+</div>
+<div class="relative pl-8 border-l border-outline-variant/30">
+<div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-outline-variant"></div>
+<div class="space-y-2">
+<h4 class="text-xl font-bold">Professional Development</h4>
+<p class="text-sm text-on-surface-variant">Data Science Internship (DataSpark), Python Programming (Kochi), NextGenAI (Kannur)</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="glass-panel p-12 rounded-[2rem] border border-outline-variant/20 relative" id="contact">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-tertiary/10 rounded-full blur-3xl"></div>
+<div class="space-y-8 relative z-10">
+<div class="space-y-2">
+<h3 class="headline-font text-3xl font-bold">Initiate Connection</h3>
+<p class="text-on-surface-variant">Ready to discuss the future of intelligence?</p>
+</div>
+<form class="space-y-6">
+<div class="space-y-1">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant/70 ml-1">Identity</label>
+<input class="w-full bg-surface-container-highest/50 border-0 border-b-2 border-outline-variant/30 focus:border-tertiary focus:ring-0 transition-all text-on-surface placeholder:text-on-surface-variant/30 py-4" placeholder="Your Name" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant/70 ml-1">Coordinate</label>
+<input class="w-full bg-surface-container-highest/50 border-0 border-b-2 border-outline-variant/30 focus:border-tertiary focus:ring-0 transition-all text-on-surface placeholder:text-on-surface-variant/30 py-4" placeholder="email@nexus.com" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant/70 ml-1">Transmission</label>
+<textarea class="w-full bg-surface-container-highest/50 border-0 border-b-2 border-outline-variant/30 focus:border-tertiary focus:ring-0 transition-all text-on-surface placeholder:text-on-surface-variant/30 py-4 resize-none" placeholder="Brief your project objective..." rows="4"></textarea>
+</div>
+<button class="w-full py-5 rounded-full neural-gradient text-on-primary-container font-bold text-lg hover:shadow-[0_0_30px_rgba(236,99,255,0.4)] transition-all duration-300 flex items-center justify-center gap-3" type="submit">
+                                Send Transmission <span class="material-symbols-outlined">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#060e20] w-full border-t border-[#40485d]/10 py-12 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="font-['Inter'] text-xs tracking-widest uppercase text-[#dee5ff]/50">
+                © 2024 Abhay Das. Neural Overlay Framework.
+            </div>
+<div class="flex items-center gap-8 font-['Inter'] text-xs tracking-widest uppercase">
+<a class="text-[#dee5ff]/50 hover:text-[#ec63ff] transition-all duration-300" href="#">GitHub</a>
+<a class="text-[#dee5ff]/50 hover:text-[#ec63ff] transition-all duration-300" href="#">LinkedIn</a>
+<a class="text-[#dee5ff]/50 hover:text-[#ec63ff] transition-all duration-300" href="#">ResearchGate</a>
+<a class="text-[#dee5ff]/50 hover:text-[#ec63ff] transition-all duration-300" href="#">Twitter</a>
+</div>
+<div class="text-[#ba9eff]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">terminal</span>
+</div>
+</div>
+</footer>
+<!-- Back to top floating button (Contextual) -->
+<a class="fixed bottom-8 right-8 w-12 h-12 glass-panel border border-outline-variant/30 rounded-full flex items-center justify-center hover:bg-primary/20 hover:border-primary transition-all duration-300 z-50" href="#hero">
+<span class="material-symbols-outlined text-primary">arrow_upward</span>
+</a>
+<script src="script.js"></script>
+</body></html>
