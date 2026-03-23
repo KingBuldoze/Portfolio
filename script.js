@@ -42,21 +42,69 @@ tiltCards.forEach(card => {
     });
 });
 
-// --- Scroll Reveal Animations ---
-const sections = document.querySelectorAll('section > div');
-sections.forEach(sec => {
+// --- Enhanced Dynamic Scroll Reveal Animations ---
+const revealElements = document.querySelectorAll('section > div, .glass-panel, .relative.pl-10');
+
+revealElements.forEach((sec, index) => {
     sec.style.opacity = '0';
-    sec.style.transform = 'translateY(50px)';
-    sec.style.transition = 'all 0.8s ease-out';
+    sec.style.transform = 'translateY(60px) scale(0.98)';
+    
+    // Create staggered transition effect
+    sec.style.transition = `opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1)`;
 });
 
 const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.style.transform = 'translateY(0) scale(1)';
+        } else {
+            // Revert the animation state when the element leaves the viewport
+            // This ensures the animation happens every time you scroll past it
+            entry.target.style.opacity = '0';
+            entry.target.style.transform = 'translateY(60px) scale(0.98)';
         }
     });
-}, { threshold: 0.1 });
+}, { 
+    threshold: 0.15, // Trigger when 15% visible
+    rootMargin: '0px 0px -50px 0px' 
+});
 
-sections.forEach(el => revealObserver.observe(el));
+revealElements.forEach(el => revealObserver.observe(el));
+
+// --- Hero Interactive Image 3D Effect ---
+const heroImgCard = document.getElementById('hero-interactive-image');
+
+if (heroImgCard) {
+    heroImgCard.addEventListener('mousemove', (e) => {
+        const rect = heroImgCard.getBoundingClientRect();
+        const x = e.clientX - rect.left; 
+        const y = e.clientY - rect.top;  
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = ((y - centerY) / centerY) * -15; 
+        const rotateY = ((x - centerX) / centerX) * 15;
+        
+        heroImgCard.style.transition = 'none';
+        heroImgCard.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+        
+        const img = heroImgCard.querySelector('img');
+        if (img) {
+            img.style.transition = 'none';
+            img.style.transform = `translateZ(60px)`;
+        }
+    });
+
+    heroImgCard.addEventListener('mouseleave', () => {
+        heroImgCard.style.transition = 'transform 0.5s ease-out';
+        heroImgCard.style.transform = `rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+        
+        const img = heroImgCard.querySelector('img');
+        if (img) {
+            img.style.transition = 'transform 0.5s ease-out';
+            img.style.transform = `translateZ(40px)`;
+        }
+    });
+}
