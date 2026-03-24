@@ -8,7 +8,7 @@ Welcome to the source code for my 3D interactive developer portfolio!
 - **Neural Nexus Design**: An ultra-modern, cyberpunk-inspired dark theme featuring volumetric lighting and intricate CSS glassmorphism.
 - **Universal 3D Interactivity**: A custom Vanilla JS engine that allows project cards and skill panels to dynamically track mouse movement across the X and Y axes, while Z-axis components actively "pop out" for profound perspective depth.
 - **Scroll Reveal Engine**: Sections elegantly fade and slide into view utilizing performant `IntersectionObserver` logic.
-- **Dynamic Typing**: Custom typing animations highlighting various AI/ML specializations (Deep Learning, Computer Vision, Generative AI).gg
+- **Dynamic Typing**: Custom typing animations highlighting various AI/ML specializations (Deep Learning, Computer Vision, Generative AI).
 
 ## 🌐 Setup & Deployment (GitHub Pages)
 
