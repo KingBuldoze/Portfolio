@@ -2,7 +2,7 @@
 
 🌐 **Visit My Live Website:** [https://kingbuldoze.github.io/Portfolio](https://kingbuldoze.github.io/Portfolio)
 
-Welcome to the source code for my 3D interactive developer portfolio!
+Welcome to the source code for MY 3D interactive developer portfolio!
 
 ## 🚀 Features
 - **Neural Nexus Design**: An ultra-modern, cyberpunk-inspired dark theme featuring volumetric lighting and intricate CSS glassmorphism.
